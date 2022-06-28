@@ -18,6 +18,18 @@
     <div>
         <h1>List of All Users</h1>
     </div>
+    <div th:fragment="searchnav" class="row">
+        <div class="col">
+            <th:block sec:authorize="isAuthenticated()">
+                <form class="form-inline my-2 my-lg-0"
+                        th:action="@{/search}" method="get">
+                    <input type="search" name="keyword" size="50" class="form-control mr-sm-2" placeholder="Search for full Game name, Rank or Main" required/>
+                    &nbsp;
+                    <input type="submit" value="Search"/>
+                </form>
+            </th:block>
+        </div>
+    </div>
     <div>
         <table class="table table-striped table-bordered">
             <thead class="thead-dark">

@@ -1,6 +1,7 @@
 package com.soloGamer.soloGamer.Details;
 
 import com.soloGamer.soloGamer.Model.User;
+
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 

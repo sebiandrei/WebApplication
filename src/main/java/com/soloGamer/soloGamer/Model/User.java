@@ -31,6 +31,9 @@ public class User {
     @Column(nullable = false, length = 20)
     private String main;
 
+    @Column(name = "reset_password_token")
+    private String resetPasswordToken;
+
     public User() {
     }
         public Long getId () {
@@ -95,5 +98,13 @@ public class User {
 
         public void setMain(String main) {
             this.main = main;
+        }
+
+        public String getResetPasswordToken() {
+            return resetPasswordToken;
+        }
+
+        public void setResetPasswordToken(String resetPasswordToken) {
+            this.resetPasswordToken = resetPasswordToken;
         }
 }
