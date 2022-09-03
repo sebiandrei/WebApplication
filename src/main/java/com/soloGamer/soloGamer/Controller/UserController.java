@@ -87,8 +87,6 @@ public class UserController {
         } catch (UnsupportedEncodingException ex) {
             model.addAttribute("error", "Error while sending email.");
         }
-
-
         return "forgot_password_form";
     }
 
@@ -124,7 +122,6 @@ public class UserController {
             model.addAttribute("message", "Invalid Token");
             return "message";
         }
-
         return "reset_password_form";
     }
 

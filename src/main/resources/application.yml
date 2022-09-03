@@ -1,0 +1,12 @@
+spring:
+  mail:
+    host: smtp.outlook.com
+    username: sologamertest@outlook.com
+    password: sgApp123
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
